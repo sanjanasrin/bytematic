@@ -86,7 +86,7 @@ const ContactUsMap = () => {
             <strong>Call</strong>
           </Typography>
           <Typography variant="body1" component="div" paragraph>
-            +91 8553517712 , +91 9738821555
+            +91 8553517712 , +91 9738851555
           </Typography>
         </Grid>
 

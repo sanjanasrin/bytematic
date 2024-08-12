@@ -102,7 +102,7 @@ const Categories = () => {
               </Box>
             </Box>
           </Link>
-          <Link to="/aboutus" style={{ textDecoration: "none" }}>
+          <Link to="/about-us" style={{ textDecoration: "none" }}>
             <Box
               sx={{
                 width: "400px",
