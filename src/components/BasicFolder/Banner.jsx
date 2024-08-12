@@ -135,11 +135,12 @@ const ScrollButton = styled(Button)(({ theme }) => ({
 }));
 
 const ImageColumn = styled("img")({
-  maxHeight: "350px",
+  height: "350px",
   width: "80%",
   borderRadius: "25px",
   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)", // Adding box shadow for the image
   marginRight: "30px",
+  marginTop: "-20px",
 });
 
 // Add the keyframes to the global styles
@@ -179,6 +180,7 @@ const Banner = ({ title, subTitle, Logo }) => {
           <Wave
             fill="#1d2057"
             paused={false}
+            marginTop="30px"
             options={{
               height: 100,
               amplitude: 20,
