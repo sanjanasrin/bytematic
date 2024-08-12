@@ -1,0 +1,68 @@
+.headers {
+  background-color: #050e3c !important;
+  width: 100%;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 60px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  margin-left: 2%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-item {
+  color: white !important;
+  margin: 0 8px;
+  text-transform: uppercase; /* Optional: Makes text uppercase for uniformity */
+}
+
+.dot {
+  color: yellow;
+  margin: 0 4px;
+}
+
+.menuButton {
+  display: none;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+  .headers {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .drawerList {
+    width: 150px;
+  }
+
+  .drawerListItem {
+    padding: 16px;
+    color: #050e3c;
+  }
+}
+
+.drawerList {
+  width: 200px;
+}
+.drawerListItem {
+  padding: 16px;
+  color: #050e3c;
+}

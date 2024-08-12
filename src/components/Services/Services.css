@@ -1,0 +1,47 @@
+/* Home.css */
+
+/* Container for the entire page layout */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Styling for content below the banner */
+.content {
+  flex: 1; /* Takes up remaining space */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f4f4f4; /* Light background color for contrast */
+}
+
+/* Optional: Add spacing and style to the header */
+.headers {
+  margin-bottom: 20px; /* Space between header and banner */
+}
+
+.services-grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Adjust minmax value as needed */
+  gap: 16px; /* Adjust the gap between items as needed */
+}
+
+@media (max-width: 768px) {
+  .services-grid-container {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* 1 item per row on smaller screens */
+    justify-items: center; /* Center-align items in the grid */
+    margin-top: 20px;
+  }
+
+  .services-grid-container > div {
+    max-width: 300px; /* Adjust the maximum width as needed */
+  }
+}
