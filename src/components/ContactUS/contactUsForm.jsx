@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 // Styled Box with updated background color and width
@@ -46,6 +46,9 @@ const ContactUsForm = () => {
         InputProps={{ style: { resize: "vertical" } }} // Make textarea resizable
         sx={{ mb: 2 }} // Margin bottom for spacing
       />
+      <Button variant="outlined" sx={{ borderColor: "white", border: "2px" }}>
+        Submit
+      </Button>
     </StyledBox>
   );
 };
